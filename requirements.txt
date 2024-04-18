@@ -6,3 +6,4 @@ openpyxl
 allure-pytest
 pytest-logger
 pytest-cov
+pytest-ordering
