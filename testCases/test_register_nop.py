@@ -17,7 +17,7 @@ class TestRegister:
     @pytest.mark.sanity
     @pytest.mark.regression
     def test_register(self,setup):
-        self.logger.info("******* STARTED *********")
+        self.logger.info("******* STARTED THE LOGS *********")
         self.driver = setup
         self.driver.get(self.url)
         self.driver.maximize_window()
