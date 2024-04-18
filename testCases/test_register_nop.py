@@ -7,6 +7,7 @@ from pageObjects.Register_nop import Register
 from utilities import randomString
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
+from utilities import screenShort
 
 
 class TestRegister:
@@ -39,9 +40,8 @@ class TestRegister:
         self.message = self.reg.setConfirmtext()
 
 
-        if self.message == "Your registration completed":
+        if self.message == "Your registration completed3":
             assert True
         else:
-            path = '/home/karunakar/PycharmProjects/Dinero_UI_Automation/screenshots/'
-            self.driver.save_screenshot(path+"test_register_1.png")
+            self.driver.save_screenshot(screenShort.screen_short()+"test_register_3.png")
             assert False
