@@ -40,7 +40,7 @@ class TestRegister:
         self.message = self.reg.setConfirmtext()
 
 
-        if self.message == "Your registration completed3":
+        if self.message == "Your registration completed":
             assert True
         else:
             self.driver.save_screenshot(screenShort.screen_short()+"test_register_3.png")
