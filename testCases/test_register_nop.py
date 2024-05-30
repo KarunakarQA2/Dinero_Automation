@@ -2,12 +2,14 @@ import time
 
 import pytest
 
+
 from pageObjects.HomePge_nop import Homepage
 from pageObjects.Register_nop import Register
 from utilities import randomString
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 from utilities import screenShort
+
 
 
 class TestRegister:
@@ -38,6 +40,7 @@ class TestRegister:
         self.reg.setConfirPassword("12345678")
         self.reg.setContinue()
         self.message = self.reg.setConfirmtext()
+
 
 
         if self.message == "Your registration completed":
